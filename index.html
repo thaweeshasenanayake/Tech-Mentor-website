@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Mentors | Digital University</title>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!-- favicon -->
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        
+    </head>
+    <body>
+
+        <!-- header  -->
+        <div class="header">
+
+            <div class="upper-bar">
+                
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="" width="185px" id="logo1">
+                    <img src="images/Logo-half.svg" width="185px" id="logo2">
+                </a>
+                
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search Online Courses...">
+                    <span class="material-icons-outlined" id="searchBox-btn">search</span>
+                </div>
+                <div class="navlink-container">
+                    <div class="nav-link">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="About-Us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                             
+                    <button class="login-btn" onclick="location.href='login.html'">Log in</button>
+                </div>
+                <a href="javascript:void(0)" id="nav-bars"><i class="fas fa-bars" id="navicon"></i></a>
+                
+            
+            </div>
+
+            <div class="lower-bar">
+                <div class="category-label"><span>Categories</span></div>
+                <div class="category-label-responsive"><span>Courses Categories &nbsp&nbsp<i class="fas fa-chevron-down"></i></span></div>
+                <div class="category-links">
+                    <ul> 
+                        <li><a href="" class="category-Btns" data-category="all">All Courses</a></li>
+                        <li><a href="" class="category-Btns" data-category="web">Web Development</a></li>
+                        <li><a href="" class="category-Btns" data-category="programming">Programming</a></li>
+                        <li><a href="" class="category-Btns" data-category="app">App Development</a></li>
+                        <li><a href="" class="category-Btns" data-category="graphic">Graphic Design</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Home page -->
+
+        <div class="home">
+
+            <div class="container-1">
+                <div class="container-1-left">
+                    <div class="slider-container">
+                        <div class="slide">
+                            <p class="topic">Grow Your Skills</p>
+                            <p class="para">75% off your first two Courses</p>
+                        </div>
+                        <div class="slide">
+                            <p class="topic">Be Expert of Python</p>
+                            <p class="para">50% off, Coupon Code : TMPY2185 </p>
+                        </div>
+                        <div class="slide">
+                            <p class="topic">Let's Code JavaScript</p>
+                            <p class="para">75% Off, Till 30th Aug</p>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="getDotValue(0)"></span>
+                            <span class="dot" onclick="getDotValue(1)"></span>
+                            <span class="dot" onclick="getDotValue(2)"></span>
+                        </div>
+                    </div>
+                    <button class="btn-get-started" data-category="all">
+                    Get Started
+                    </button>
+                </div>
+                <div class="container-1-right">
+                    <img src="images/homeart.svg" alt="" width="450px">
+                </div>
+            </div>
+
+            <div class="container-2">
+                <input type="email" placeholder="Enter your email here">
+                <button class="btn-offers">Know about more offers</button>
+            </div>
+
+        </div>
+
+
+        <!--    popular courses page -->
+
+        <div class="popular-page">
+
+            <!-- Step 01 02 03 -->
+
+            <div class="step-container">
+                <div class="step">
+                    <h3>Step 01</h3>
+                    <p>Search or Go through categories and select your courses</p>
+                </div>
+                <div class="step">
+                    <h3>Step 02</h3>
+                    <p>Enroll to your prefer course</p>
+                </div>
+                <div class="step">
+                    <h3>Step 03</h3>
+                    <p>Complete the course within timeline and claim you certificate</p>
+                </div>
+            </div>
+
+
+            <h2 class="page-title popular">Popular Courses</h2>
+            
+            <!-- -----------------------
+            Modal Create -view course
+            --------------------------------->
+            
+            <div class="course-view">
+                <div class="course-view-content">
+                    <div class="upper-content">
+                        <div class="name-and-icon-container">
+                            <p id="course-name">Java Full Course : Beginner to Advanced</p>
+                            <span id="close-icon">&times;</span>
+                        </div>
+                        <div class="rating-and-button-container">
+                            <div class="ins-name-and-rating-container">
+                                <div class="instructor-container">
+                                    <i class="fas fa-user-circle"></i> 
+                                    <p id="instructorName">Dr. Angela Jae</p>
+                                </div>
+                                <div class="rating-container">
+                                    <p id="rate">4.7</p>
+                                    <p id="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                    <p id="ratings-amount">(25)</p>
+                                </div>
+                            </div>
+                            
+                            <button id="Btn-Enroll">Enroll Now</button>
+                        </div>
+                    </div>
+                    <div class="course-specs">
+                        <div class="upper-box">
+                            <div>
+                                <p>Course Fee</p>
+                                <h1 id="courseFee">$15</h1>
+                            </div>
+                            <div>
+                                <p>Weeks</p>
+                                <h1 id="weekAmount">04</h1>
+                            </div>
+                            <div>
+                                <p>Videos</p>
+                                <h1 id="videoAmount">45</h1>
+                            </div>
+                            <div>
+                                <p>Quizzes</p>
+                                <h1 id="quizAmount">10</h1>
+                            </div>
+                            <div>
+                                <p>Projects</p>
+                                <h1 id="projectAmount">05</h1>
+                            </div>
+                        </div>
+                        <div class="bottom-box">
+                            <div>
+                                <img src="images/level icon.svg" alt="" width="20px">
+                                <p>Beginner Level</p>
+                            </div>
+                            <div>
+                                <span class="material-icons-outlined">card_membership</span>
+                                <p>Valid Certificate</p>
+                            </div>
+                            <div>
+                                <span class="material-icons-outlined">all_inclusive</span>
+                                <p>Life Time Access</p>
+                            </div>
+                        </div>
+
+                        <button class="btn-course-content">
+                        <p>Course Content</p>
+                        <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- ------------------------------------- -->
+            <!-- courses container -->
+            <div class="course-container">
+                <div class="course" data-week="4" data-videos="20" data-quiz="10" data-projects="10" data-color="rgba(0,196,158,1) 42%">
+                    <img src="images/java-course.jpg" alt="" width="350px">
+                    <p>Java Full Course  :  Beginner to Advanced</p>
+                    <div class="name-price">
+                        <p class="instructor-name">Dr. Angela Jae</p>
+                        <h3 class="price">$15</h3>
+                    </div>
+                    <div class="rating">
+                        <h4>4.4</h4>
+                        <p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <h4>(25)</h4>
+                    </div>
+                    <button class="btn-view-course">View Course</button>
+                    <p style="display:none" class="aboutCourse">
+                        fgfg
+                    </p>
+                </div>
+                <div class="course" data-week="5" data-videos="30" data-quiz="12" data-projects="06" data-color="rgba(255,202,67,1) 42%">
+                    <img src="images/js-course.jpg" alt="" width="350px">
+                    <p>JavaScript Full Course  :  Beginner to Advanced</p>
+                    <div class="name-price">
+                        <p class="instructor-name">Dr. A.D. Perera</p>
+                        <h3 class="price">$25</h3>
+                    </div>
+                    <div class="rating">
+                        <h4>4.9</h4>
+                        <p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <h4>(50)</h4>
+                    </div>
+                    <button class="btn-view-course">View Course</button>
+                </div>
+                <div class="course" data-week="8" data-videos="40" data-quiz="10" data-projects="05" data-color="rgba(0,168,255,1) 42%">
+                    <img src="images/css-course.jpg" alt="" width="350px">
+                    <p>CSS Full Course  :  Beginner to Advanced</p>
+                    <div class="name-price">
+                        <p class="instructor-name">Dr. Angela Jae</p>
+                        <h3 class="price">$10</h3>
+                    </div>
+                    <div class="rating">
+                        <h4>4.5</h4>
+                        <p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <h4>(10)</h4>
+                    </div>
+                    <button class="btn-view-course">View Course</button>
+                </div>
+            </div>
+            
+            <a class="btn-explore-more" data-category="all">Explore More Courses</a>
+        </div>
+
+        <!-- Register Student and courses counter -->
+
+        <div class="counter">
+            <div class="counter-section">
+                <p>Students <br>Registered</p>
+                <h1 class="amount-show" id="counter studentCount" data-target="3000">0</h1>
+            </div>
+            <div class="counter-section">
+                <p>Certificate<br>Issues</p>
+                <h1 class="amount-show" id="counter certificateCount" data-target="1500">0</h1>
+            </div>
+            <div class="counter-section">
+                <p>Courses<br>Available </p>
+                <h1 class="amount-show" id="counter coursesCount" data-target="2000">0</h1>
+            </div>
+        </div>
+
+
+        <!-- --------------------
+        student testimonials page
+        ------------------------ -->
+
+        <h2 class="page-title testimonials">Student Testimonials</h2>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial testimonial-1">
+                <img src="images/boy1.png" alt="" width="250px">
+                <div class="testimonial-para">
+                    <span>”</span>
+                    <p><i>My experience at Tech Mentors is great.
+                        The mentors at TechMentors helped enhance my skills. 
+                        I am thankful to give these courses
+                        for reasonable price and providing a platform
+                        to enhance my skills.In the last I am saying that
+                        The World is here at Tech Mentors.
+                        </i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial testimonial-2">
+                <div class="testimonial-para">
+                    <span>”</span>
+                    <p><i>Tech Mentors is valuable place to learn new technology.
+                        TechMentors helped enhance my skills. I am thankful to
+                        give these courses for reasonable price and providing
+                        a platform to enhance my skills. </i>
+                    </p>
+                </div>
+                <img src="images/boy3.png" alt="" width="250px">
+            </div>
+
+        </div>
+
+
+        <!-- Join as teacher page -->
+
+        <div class="join-us-container">
+           <img src="images/teacher.png" alt="" width="300px">
+            <div class="join-us-para">
+                <h2>Want to Join with us as A Teacher ?</h2>
+                <p>Are you expert in IT field and do you have <br>attractive teaching ability. Now, Join with us.</p>
+                <button class="btn-lets-teach">Let's Teach</button>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer-container">
+            <div class="footer-upper">
+                <div class="section-1">
+                    <img src="images/logo-white-01.svg" alt="" width="200px">
+                    <div class="social-icons">
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="section section-2">
+                    <ul>
+                        <li><a href="javascript:void(0)">Offers</a></li>
+                        <li><a href="javascript:void(0)">Scholarship</a></li>
+                        <li><a href="javascript:void(0)">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="section section-3">
+                    <ul>
+                        <li><a href="About-Us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="javascript:void(0)">Affiliate</a></li>
+                        <li><a href="javascript:void(0)">Help and Support</a></li>
+                        <li><a href="javascript:void(0)">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="section section-4">
+                    <ul>
+                        <li><a href="javascript:void(0)">Terms</a></li>
+                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2021 Thaweesha Senanayake.</p>
+            </div>
+        </div>
+
+
+        <script src="js/script.js"></script>
+        <script src="js/navbar.js"></script>
+
+    </body>
+</html>

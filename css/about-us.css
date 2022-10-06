@@ -1,0 +1,164 @@
+.about-header{
+	background: rgb(0,109,91);
+	background-image:linear-gradient(90deg, rgba(0,109,91,0.7) 0%, rgba(0,109,91,0.7) 100%),url("https://i.ibb.co/FBxQDPX/durham.jpg");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	width: 100%;
+}
+.about-header > h1{
+	margin-top: 150px;
+	color: #fff;
+	font-size: 60px;
+	user-select: none;
+}
+
+.aboutus-paragraph{
+	padding: 50px 200px;
+	text-align: center;
+	font-size: 20px;
+
+}
+.vision-and-mission{
+	margin-top: 20px;
+	background-color: #EFEFEF;
+}
+.vision-and-mission > div{
+	height: 300px;
+}
+.vision, .mission{
+	display: flex;
+	align-items: center;
+}
+.vision >div , .mission >div{
+	width: 50%;
+	text-align: center;
+
+}
+.para-5{
+	padding: 0 150px;
+	font-weight: 300;
+}
+.topic2{
+	text-align: center;
+	background-color: #00382F;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+}
+.our-team-title{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+	padding-top: 100px;
+	color: #969696;
+	background-color: #EFEFEF;
+}
+.our-team {
+	background-color: #EFEFEF;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 50px 50px;
+
+}
+.our-team >div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;
+
+}
+.our-team >div >img{
+	margin-bottom: 10px;
+}
+.our-team >div >p{
+	font-weight: 300;
+}
+
+.our-partners{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #EFEFEF;
+	padding: 20px 300px; 
+}
+
+@media screen and (max-width: 1200px){
+	.about-header{
+		height: 60vh;
+	}
+	.para-5{
+		padding: 0 100px;
+
+	}
+}
+
+@media screen and (max-width: 975px){
+	.aboutus-paragraph{
+		font-size: 16px;
+		padding: 50px 180px;
+	}
+	.para-5{
+		padding: 0 60px;
+
+	}
+	.topic2{
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 875px){
+	.aboutus-paragraph{
+		font-size: 14px;
+		padding: 50px 10px 100px;
+	}
+	.vision-and-mission > div{
+		height: 150px;
+	}
+	.vision, .mission{
+		width: 100%;
+		flex-direction: column;
+	}
+	.mission{
+		flex-direction: column-reverse;
+	}
+	.vision >div , .mission >div
+	{
+		width: 100%;
+		height: 80px;
+	}
+
+	.para-5{
+		padding: 10px 40px;
+		font-size: 13px;
+
+	}
+	.topic2{
+		height: 80px;
+		font-size: 40px;
+	}
+	.our-team{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.our-team >div {
+		margin-top: 10px;
+		width: 100%;
+	}
+	.our-partners {
+		flex-direction: column;
+		padding:0 0 20px 0; 
+	}
+	.our-partners >img{
+		margin-top: 40px;
+	}
+}

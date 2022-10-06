@@ -1,0 +1,184 @@
+*,body,html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	position: relative;
+
+}
+.main-container{
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+}
+
+/*left side of the page*/
+.left-container{
+	background-color: #004539;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.left-container> div{
+	height: 20%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 70px;
+	text-align: center;
+	justify-content:space-between;
+}
+.left-container > .curves{
+	width: 100%;
+}
+
+/*Right side of the page*/
+
+.right-container{
+	width: 60%;
+	padding: 100px 40px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.right-container >h1{
+	font-family: 'Quicksand', sans-serif;
+	font-weight:700;
+}
+.username{
+	margin-top: 40px;
+}
+.password{
+	margin-top: 20px;
+}
+.username, .password{
+	width: 400px;
+	position: relative;
+	height: 60px;
+	
+}
+.username >input, .password > input{
+	width: 100%;
+	background-color: #E2E2E2;
+	height: 100%;
+	border: none;
+	border-radius: 5px;
+	font-family: "poppins",sans-serif;
+	font-size: 15px;
+	padding-left: 40px;
+	outline: none;
+	
+}
+.username >i, .password > i{
+	position: absolute;
+	top: 35%;
+	padding-left: 10px;
+}
+.password > .fa-eye{
+	right: 0;
+	top: 40%;
+	padding-right: 10px;
+}
+
+.forgot-container{
+	margin-top: 30px;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.forgot-container>a{
+	text-decoration: none;
+	color: #000;
+}
+.forgot-container >div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.forgot-container >div >label{
+	margin-left: 6px;
+}
+.btn-login{
+	margin-top: 30px;
+	width: 400px;
+	height: 50px;
+	background-color: #004539;
+	border: none;
+	border-radius: 90px;
+	font-family: 'poppins',sans-serif;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+
+}
+.btn-login:hover{
+	background-color: #006251;
+}
+
+.login-with{
+	margin-top: 30px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login-with>div{
+	margin-top: 20px;
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.login-with>div >img{
+	cursor: pointer;
+}
+.signUp{
+	margin-top: 50px;
+	width: 400px;
+	text-align: center;
+}
+.logo{
+	display: none;
+}
+@media screen and (max-width: 1000px){
+	.left-container> div{
+		padding: 0 30px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+@media screen and (max-width: 750px){
+	.left-container{
+		display: none;
+	}
+	.logo{
+		transform: translateY(-40px);
+		display: block;
+	}
+	.right-container{
+		padding: 20px 5px;
+		width: 100%;
+	}
+	.username, .password,
+	.forgot-container,
+	.btn-login,
+	.login-with,
+	.signUp{
+
+		width: 90%;
+
+	}
+
+}
